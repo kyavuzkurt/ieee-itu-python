@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "isim": "1984",
+        "yazar": "George Orwell",
+        "turu": "Roman",
+        "stok": 5
+    },
+    {
+        "id": 2,
+        "isim": "C Programlama Dili",
+        "yazar": "Brian W. Kernighan",
+        "turu": "Korku",
+        "stok": 3
+    }
+]
