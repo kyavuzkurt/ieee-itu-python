@@ -44,4 +44,3 @@ for name, note in avg_notes.items(): # Harf notlarının atanması
 print(grades)
 
 
-

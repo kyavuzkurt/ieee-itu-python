@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "isim": "1984",
+        "yazar": "George Orwell",
+        "turu": "Roman",
+        "stok": 3
+    },
+    {
+        "id": 2,
+        "isim": "Python Programlama",
+        "yazar": "John Doe",
+        "turu": "Ders Kitabı",
+        "stok": 10
+    },
+    {
+        "id": 3,
+        "isim": "Hello World",
+        "yazar": "Mustafa",
+        "turu": "Korku",
+        "stok": 2
+    }
+]

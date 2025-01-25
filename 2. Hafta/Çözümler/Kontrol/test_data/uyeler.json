@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "isim": "Ali",
+        "soyisim": "Yilmaz",
+        "telefon": "555-1234",
+        "email": "ali.yilmaz@example.com"
+    },
+    {
+        "id": 2,
+        "isim": "Saul",
+        "soyisim": "Goodman",
+        "telefon": "5123456789",
+        "email": "saul@goodman.com"
+    },
+    {
+        "id": 3,
+        "isim": "Saul",
+        "soyisim": "Goodman",
+        "telefon": "5123456789",
+        "email": "saul@goodman.com"
+    },
+    {
+        "id": 4,
+        "isim": "Saul",
+        "soyisim": "Goodman",
+        "telefon": "5123456789",
+        "email": "saul@goodman.com"
+    }
+]
