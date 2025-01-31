@@ -1,5 +1,5 @@
 from collections import deque
-
+"""
 maze = [
     [1, 1, 1, 1],
     [0, 0, 0, 1],
@@ -26,6 +26,7 @@ maze = [
     ]
 start = (0, 0)
 end = (2, 2)
+"""
 
 maze = [
     [1, 0, 1, 0, 1],

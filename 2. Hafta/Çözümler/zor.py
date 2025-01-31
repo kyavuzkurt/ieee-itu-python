@@ -7,6 +7,7 @@ with open('uyeler.json', 'r', encoding='utf-8') as f:
 with open('oduncler.json', 'r', encoding='utf-8') as f:
     oduncler = json.load(f)
 
+
 while True:
     print("\n=== Kütüphane Yönetim Sistemine Hoş Geldiniz ===\n")
     print("1. Kitap Yönetimi")
