@@ -105,4 +105,40 @@ class Kutuphane:
 
 # Örnek Kullanım
 if __name__ == "__main__":
-    #
+    # Kütüphane örneği oluştur
+    kutuphane = Kutuphane()
+
+    # Kitaplar oluştur
+    kurgu_kitap = KurguEser("978-1", "Suç ve Ceza", "Dostoyevski", 3)
+    ansiklopedi = Ansiklopedi("978-2", "Dünya Tarihi", "John Smith", 2)
+
+    # Kitapları kütüphaneye ekle
+    kutuphane.kitap_ekle(kurgu_kitap)
+    kutuphane.kitap_ekle(ansiklopedi)
+
+    # Üyeler oluştur
+    uye1 = Uye("U001", "Ahmet Yılmaz")
+    uye2 = Uye("U002", "Ayşe Demir")
+
+    # Üyeleri kütüphaneye kaydet
+    kutuphane.uye_kaydet(uye1)
+    kutuphane.uye_kaydet(uye2)
+
+    # Kitap ödünç alma işlemleri
+    print(f"Stok durumu (Suç ve Ceza): {kutuphane.stok_durumu('978-1')}")  # 3
+    
+    # Ahmet bir kitap ödünç alıyor
+    kutuphane.odunc_al("978-1", "U001")
+    print(f"Stok durumu (Suç ve Ceza): {kutuphane.stok_durumu('978-1')}")  # 2
+    
+    # Ayşe bir kitap ödünç alıyor
+    kutuphane.odunc_al("978-1", "U002")
+    print(f"Stok durumu (Suç ve Ceza): {kutuphane.stok_durumu('978-1')}")  # 1
+
+    # Ahmet kitabı iade ediyor
+    kutuphane.iade_et("978-1", "U001")
+    print(f"Stok durumu (Suç ve Ceza): {kutuphane.stok_durumu('978-1')}")  # 2
+
+    # Olmayan bir kitap için stok kontrolü
+    print(f"Olmayan kitap stok durumu: {kutuphane.stok_durumu('999-9')}")  # None
+    

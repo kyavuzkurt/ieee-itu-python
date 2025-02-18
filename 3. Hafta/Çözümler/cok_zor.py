@@ -19,6 +19,19 @@ def timer(func):
     wrapper.is_running = False
     return wrapper
 
+"""
+# Bu zor kısım için yeterliydi. Üstteki kodun farkı recursive fonksiyonlarda tek tek çağırılmamasıydı.
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"Function {func.__name__} took {end_time - start_time} seconds to execute.")
+        return result
+    return wrapper
+"""
+
+
 @timer
 def bubble_sort(data):
     for i in range(len(data)):
@@ -135,13 +148,7 @@ def main():
         writer.writerow(["value"])
         for row in sorted_data_quick:
             writer.writerow([row])
-    
-    sorted_data_bogosort = bogosort(data.copy())
-    with open("sorted_bogosort.csv", "w", newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(["value"])
-        for row in sorted_data_bogosort:
-            writer.writerow([row])
+
     
     print("Tüm sıralama işlemleri tamamlandı.")
 
